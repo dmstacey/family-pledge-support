@@ -1,10 +1,15 @@
 # Family Pledge — Support site (GitHub Pages)
 
-Static support + privacy pages for App Store Connect.
+Static support + privacy pages for App Store Connect and Google Play.
+
+**Live URLs**
+
+- Support: https://dmstacey.github.io/family-pledge-support/
+- Privacy: https://dmstacey.github.io/family-pledge-support/privacy.html
+- Web app: https://familypledge.app
+- Support email: support@familypledge.app
 
 ## Local preview
-
-Open `index.html` in a browser, or:
 
 ```bash
 cd ~/Code/family-pledge-support
@@ -13,12 +18,23 @@ python3 -m http.server 8080
 
 Then visit http://localhost:8080
 
-## Publish on GitHub Pages
+## Publish
 
-See **PUBLISH.md** for step-by-step instructions.
+Push to `main` on GitHub. Pages deploys from the repo root.
 
-After publishing, use these URLs in App Store Connect:
+```bash
+cd ~/Code/family-pledge-support
+git add .
+git commit -m "Update support and privacy copy"
+git push
+```
 
-- **Support URL:** `https://YOUR_GITHUB_USERNAME.github.io/family-pledge-support/`
-- **Privacy Policy URL:** `https://YOUR_GITHUB_USERNAME.github.io/family-pledge-support/privacy.html`
-- **Copyright:** `© 2026 David Stacey`
+See **PUBLISH.md** for first-time setup details.
+
+## Store Connect fields
+
+| Field | Value |
+|--------|--------|
+| Support URL | `https://dmstacey.github.io/family-pledge-support/` |
+| Privacy Policy URL | `https://dmstacey.github.io/family-pledge-support/privacy.html` |
+| Copyright | `© 2026 David Stacey` |
