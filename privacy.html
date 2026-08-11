@@ -13,7 +13,7 @@
       <p class="eyebrow">Legal</p>
       <h1>Privacy Policy</h1>
       <p class="lede">Family Pledge application (iOS, Android, and web)</p>
-      <p class="muted">Last updated: 3 August 2026</p>
+      <p class="muted">Last updated: 11 August 2026</p>
     </div>
   </header>
 
@@ -22,8 +22,9 @@
       <h2>Overview</h2>
       <p>
         Family Pledge (“the App”) helps you read the Cheon Il Guk Family Pledge,
-        browse song lyrics (including chord charts), listen to music, view a photo
-        gallery, and use a heavenly calendar with optional local reminders.
+        study the Korean recitation with follow-along audio, browse song lyrics
+        (including chord charts), listen to music, view a photo gallery, and use a
+        heavenly calendar with optional local reminders.
         We designed it to work primarily on your device.
         This policy explains what information the App uses and what it does not collect.
       </p>
@@ -33,10 +34,11 @@
       <h2>Information we do not collect</h2>
       <ul>
         <li>We do not require you to create an account or sign in.</li>
-        <li>We do not collect your name, email, or phone number through the App.</li>
+        <li>We do not collect your name, email, phone number, or other contact details through the App.</li>
         <li>We do not sell personal data.</li>
         <li>We do not show third-party advertising in the App.</li>
-        <li>We do not operate our own analytics or tracking servers for the App.</li>
+        <li>We do not use session replay or record your screen.</li>
+        <li>We do not put full pledge or lyric text into analytics events.</li>
       </ul>
     </section>
 
@@ -53,11 +55,42 @@
         <li>Last played music track (if any)</li>
         <li>Calendar filter preferences (which event types you show or hide)</li>
         <li>Calendar reminder preferences (which event types remind you, and at what time)</li>
+        <li>One-time tip dismissals (for example mini-player and recitation tips)</li>
+        <li>Optional offline audio cache files (on supported platforms)</li>
       </ul>
       <p>
         This data stays on your device unless you delete the App or clear its data
         through your device settings. Uninstalling the App removes local preferences
         and cancels scheduled local reminders on that device.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Anonymous product analytics (usage data)</h2>
+      <p>
+        To understand which features are used and to improve reliability, the App
+        sends <strong>anonymous product analytics</strong> to
+        <a href="https://posthog.com" rel="noopener noreferrer">PostHog</a>
+        (EU Cloud, host <code>eu.i.posthog.com</code>).
+      </p>
+      <p>
+        Analytics are <strong>not tied to your name or account</strong>. There is no
+        login and we do not call identify with personal details. Events use stable
+        technical IDs (for example language id, track id, song id, background id),
+        platform (iOS / Android / web), and app version—not free-form personal text.
+      </p>
+      <p>Examples of events we may record:</p>
+      <ul>
+        <li>Which section of the App you open (hub navigation / screens)</li>
+        <li>Which pledge language you view</li>
+        <li>When a music track starts loading or fails to play (for error diagnosis)</li>
+        <li>When you open lyrics, toggle chords, or view a gallery photo</li>
+        <li>When you change background, text size, or reminder preferences</li>
+      </ul>
+      <p>
+        We do not use this data for advertising profiles. Session replay is off.
+        PostHog processes the data as our analytics provider under their terms and
+        privacy policy. The project is hosted in the EU region.
       </p>
     </section>
 
@@ -78,11 +111,18 @@
     </section>
 
     <section class="card">
-      <h2>Internet access</h2>
+      <h2>Internet access and media</h2>
       <p>
-        Core reading, lyrics, themes, bundled audio, and the calendar catalog work
-        offline after install. The App does not send your reading preferences,
-        reminder settings, or calendar filters to our own servers for profiling.
+        Core reading, lyrics, themes, the calendar catalog, and many images work
+        offline after install. Music and the Korean Family Pledge recitation stream
+        from a content delivery network (Cloudflare R2) so the App download stays smaller.
+        That means playback needs a network connection (or a previously cached file
+        where offline download is available).
+      </p>
+      <p>
+        Streaming and analytics requests send ordinary technical data that networks
+        always use (such as IP address) to the CDN and analytics hosts. We do not use
+        that for advertising.
       </p>
       <p>
         If you open external links from the App (for example Support development,
@@ -96,7 +136,7 @@
         <a href="https://familypledge.app">familypledge.app</a>
         is hosted by a third-party hosting provider, which may process standard
         technical logs (such as IP address and browser type) as part of delivering
-        the site. We do not use that for advertising profiles.
+        the site.
       </p>
     </section>
 

@@ -9,6 +9,11 @@ Static support + privacy pages for App Store Connect and Google Play.
 - Web app: https://familypledge.app
 - Support email: support@familypledge.app
 
+## What’s covered
+
+- Support tips (hub, Korean recitation, mini-player title jump, calendar, lyrics, Android back)
+- Privacy policy including **anonymous product analytics** (PostHog EU), local preferences, streamed audio CDN, and local reminders
+
 ## Local preview
 
 ```bash
@@ -25,7 +30,7 @@ Push to `main` on GitHub. Pages deploys from the repo root.
 ```bash
 cd ~/Code/family-pledge-support
 git add .
-git commit -m "Update support and privacy copy"
+git commit -m "Update support and privacy for 1.5.0"
 git push
 ```
 
