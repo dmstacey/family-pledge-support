@@ -13,7 +13,7 @@
       <p class="eyebrow">Legal</p>
       <h1>Privacy Policy</h1>
       <p class="lede">Family Pledge application (iOS, Android, and web)</p>
-      <p class="muted">Last updated: 10 September 2026</p>
+      <p class="muted">Last updated: 14 September 2026</p>
     </div>
   </header>
 
@@ -24,7 +24,8 @@
         Family Pledge (“the App”) is operated by <strong>David Stacey</strong>.
         It helps you read the Cheon Il Guk Family Pledge (including an English
         kids edition), study the Korean recitation with follow-along audio, read
-        short quotes from True Parents’ books, add an optional Quote of the day
+        short quotes from True Parents’ books, browse a Resources library of
+        books and teaching materials, add an optional Quote of the day
         home-screen widget, practice with a Family Pledge quiz,
         browse song lyrics (including chord charts, share, and PDF download),
         listen to music (including sharing a song link), view a photo gallery, and use a heavenly calendar with
@@ -65,7 +66,7 @@
         <li>Selected background theme</li>
         <li>Text size and card opacity settings</li>
         <li>Last played music track (if any)</li>
-        <li>Starred lyrics, songs, and quotes, and pinned music playlists</li>
+        <li>Starred lyrics, songs, quotes, and resources, and pinned music playlists</li>
         <li>Quotes language, quote-of-the-day flags, and quote share-card preferences</li>
         <li>Calendar filter preferences (which event types you show or hide)</li>
         <li>Calendar, quiz, and daily-quote reminder preferences (what reminds you, and at what time)</li>
@@ -123,6 +124,7 @@
         Those values are used only to keep the same stars, pins, and background
         on devices where you are signed in. They are not shown on the public
         leaderboard. Guests keep this data on the device only.
+        Starred resources stay on this device and are not synced with an account.
       </p>
     </section>
 
@@ -165,7 +167,7 @@
         <li><strong>Google</strong> — Sign in with Google</li>
         <li><strong>Supabase</strong> — account, display name, quiz totals, and leaderboard</li>
         <li><strong>Resend</strong> — email sign-in codes</li>
-        <li><strong>Cloudflare</strong> — audio and other media delivery (R2 / CDN)</li>
+        <li><strong>Cloudflare</strong> — audio and published teaching files (R2 / CDN)</li>
         <li><strong>The host of familypledge.app</strong> — delivering the web app</li>
         <li><strong>PostHog</strong> (EU Cloud) — anonymous product analytics, described below</li>
       </ul>
@@ -186,7 +188,7 @@
       <p>
         Analytics are <strong>not tied to your name, email, or account</strong>.
         We do not call identify with personal details. Events use stable
-        technical IDs (for example language id, track id, song id, quote id, background id),
+        technical IDs (for example language id, track id, song id, quote id, resource id, background id),
         platform (iOS / Android / web), and app version — not free-form personal text.
         If you sign in or join the leaderboard, we may record that the action
         happened and which method you used (Apple, Google, or email), but not
@@ -199,7 +201,8 @@
         <li>When a music track starts loading or fails to play (for error diagnosis)</li>
         <li>When you open lyrics, toggle chords, share lyrics, export a lyrics PDF, share a song from Music, or view a gallery photo (song, track, or picture id only — never the lyric text)</li>
         <li>When you tap Open in app on the mobile website (the in-app path only)</li>
-        <li>When you open Reading, view a quote, change quote language, share a quote, or add the Quote of the day widget (quote id only — never the quote text)</li>
+        <li>When you open Quotes, view a quote, change quote language, share a quote, or add the Quote of the day widget (quote id only — never the quote text)</li>
+        <li>When you open Resources, open a book, view or download a PDF, or open an external link (resource id only — never the book text)</li>
         <li>When you start, finish, or leave a quiz, and reminder preference changes</li>
         <li>When you change background, text size, or reminder preferences</li>
         <li>When you open Progress or the leaderboard</li>
